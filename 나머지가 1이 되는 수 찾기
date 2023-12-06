@@ -1,0 +1,17 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/87389
+
+class Solution {
+    fun solution(n: Int): Int {
+        
+        var input = 0
+        for(i in 1..n){
+            if(n % i == 1) {
+                input = i
+                break
+            }
+        }
+        
+        var answer: Int = input
+        return answer
+    }
+}
