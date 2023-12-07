@@ -1,0 +1,16 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/12954?language=javascript
+
+function solution(x, n) {
+    var answer = [];
+
+    var x_copy = x
+
+    answer.push(x_copy)
+
+    for(var i=0;i<n - 1;i++) {
+        x_copy+=x
+        answer.push(x_copy)
+    }
+    
+    return answer;
+}
