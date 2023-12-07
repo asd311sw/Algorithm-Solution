@@ -1,0 +1,21 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/12933
+
+function solution(n) {
+
+    var list = []
+
+    var str = `${n}`
+
+    var len = str.length
+    for(var i=0;i<len;i++){
+        list.push(str[i])
+    }
+
+    list.sort((a,b) => b - a)
+
+    
+    
+    
+    var answer = parseInt(list.join(""))
+    return answer;
+}
