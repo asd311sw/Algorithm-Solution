@@ -1,0 +1,19 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/12934
+
+function solution(n) {
+    var answer = 0;
+    var sqrt = Math.sqrt(n)
+    var str = `${sqrt}`
+
+    var idx = str.indexOf(".")
+
+    if(idx != -1){
+        answer = -1
+    }
+    else{
+
+        answer = Math.pow(sqrt+1,2)
+    }
+    
+    return answer;
+}
