@@ -1,0 +1,16 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/12932
+
+
+function solution(n) {
+    var answer = [];
+
+
+    var n_copy = `${n}`
+
+    var len = n_copy.length
+    for(var i=len -1;i >= 0 ;i--){
+        answer.push(parseInt(n_copy[i]))   
+    }    
+    
+    return answer;
+}
