@@ -1,0 +1,19 @@
+function solution(absolutes, signs) {
+    
+
+    var len = absolutes.length
+
+    var sum = 0
+
+    for(var i=0;i<len;i++){
+        if(signs[i]){
+            sum+=absolutes[i]
+        }
+        else{
+            sum+=-absolutes[i]
+        }
+    }
+    
+    var answer = sum;
+    return answer;
+}
