@@ -1,0 +1,19 @@
+function solution(phone_number) {
+    
+
+    var len = phone_number.length
+    var num = len - 4
+    var list = []
+
+    for(var i=0;i<len;i++){
+        if(i < num){
+            list.push("*")
+        }
+        else{
+            list.push(phone_number[i])
+        }
+    }
+    
+    var answer = list.join("");
+    return answer;
+}
