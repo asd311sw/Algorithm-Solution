@@ -1,0 +1,15 @@
+function solution(seoul) {
+
+    var len = seoul.length
+    var res = null
+
+
+    for(var i=0;i<len;i++){
+        if(seoul[i] == "Kim"){
+            res = `김서방은 ${i}에 있다`
+        }
+    }
+
+    var answer = res;
+    return answer;
+}
