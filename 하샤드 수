@@ -1,0 +1,38 @@
+function solution(x) {
+
+    
+    var n = x
+    var str = `${n}`
+    var len = str.length
+
+    var quote = null
+    var remainder = null
+
+    var list = []
+
+    while(quote!=0){
+        quote = parseInt(n / 10)
+        remainder = n % 10
+        n = quote
+        list.push(remainder)
+        console.log(remainder)
+    }
+    
+    
+    var sum = 0
+    list.forEach(e => {
+
+        sum += e
+    })
+    
+    var answer = true
+
+    if(x % sum == 0){
+        answer = true
+    }
+    else{
+        answer = false
+    }
+    
+    return answer;
+}
