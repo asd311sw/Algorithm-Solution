@@ -1,0 +1,13 @@
+function solution(a, b) {
+    var answer = 1234567890;
+
+    var len = a.length
+
+    var sum = 0
+    for(var i=0;i<len;i++){
+        sum+=a[i]*b[i]
+    }
+    answer = sum
+
+    return answer;
+}
