@@ -1,0 +1,33 @@
+function solution(left, right) {
+    function getCount(num){
+
+    var count = 0
+
+    for(var i=1;i<=num;i++){
+        if(num % i == 0){
+            count+=1
+        }
+
+    }
+
+        return count
+    }
+
+    var sum = 0
+
+    for(var i=left;i<=right;i++){
+
+        var res = getCount(i)
+        if(res % 2 ==0){
+            sum+=i
+        }
+        else{
+            sum-=i
+        }
+
+
+    }
+
+    var answer = sum;
+    return answer;
+}
